@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantikorit</title>
+    <meta name="description" content="Персональный сайт-визитка Mantikorit: проекты, ссылки, поддержка.">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #f4f4f4;
+            color: #333;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            width: min(70%, 1000px);
+            margin: 0 auto;
+            padding: 20px;
+            flex: 1;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 20px;
+        }
+        .phrase {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Кнопка "Наверх" */
+        #scrollToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 50%;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s;
+            z-index: 1000;
+        }
+
+        #scrollToTop.show {
+            opacity: 0.7;
+            visibility: visible;
+        }
+
+        #scrollToTop:hover {
+            opacity: 1;
+        }
+
+        /* Стили для кнопки "К поддержке" */
+        #scrollToSupport {
+            position: fixed;
+            /*bottom: 70px; /* Чуть выше кнопки "Наверх" */
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 50%;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+            z-index: 1000;
+        }
+
+        #scrollToSupport.hide {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        #scrollToSupport:hover {
+            opacity: 1;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            padding: 10px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="scrollToSupport" title="К поддержке">⇩</button>
+        <button id="scrollToTop" title="Наверх">⇧</button>
+    </div>
+    <header>
+        <div id="phrase" class="phrase">Загрузка...</div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Mantikorit</h2>
+            <p>Оформить в виде карточки</p>
+            <p>Фото + кто по жизни</p>
+            <p>Навыки, увлечения, опыт.</p>
+        </section>
+
+        <main>
+            <nav>
+                <a href="pages/links.html" class="nav-link">Ссылки</a>
+                <a href="pages/projects.html" class="nav-link">Проекты</a>
+                <a href="pages/group.html" class="nav-link">Коллективы</a>
+            </nav>
+            <div id="content">Загрузка...</div>
+        </main>
+        
+        <section id="support">
+            <h1>Поддержать</h1>
+            <a href="https://www.donationalerts.com/r/mantikorit" target="_blank">Донейшен</a>
+            <a href="https://hipolink.net/mantikorit" target="_blank">Хиполинк</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Создано автором и загружено на GitHub</p>
+    </footer>
+    <script src="scripts/pageLoader.js"></script>
+    <script src="scripts/phrase.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/scrollToTop.js"></script>
+    <script src="scripts/scrollToSupport.js"></script>
+</body>
+</html>
