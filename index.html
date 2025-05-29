@@ -1,162 +1,124 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mantikorit</title>
-    <meta name="description" content="Персональный сайт-визитка Mantikorit: проекты, ссылки, поддержка.">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            background: #f4f4f4;
-            color: #333;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .container {
-            width: min(70%, 1000px);
-            margin: 0 auto;
-            padding: 20px;
-            flex: 1;
-        }
-        header {
-            background: #222;
-            color: white;
-            padding: 20px;
-        }
-        .phrase {
-            font-size: 18px;
-            font-weight: bold;
-            margin: 10px 0;
-        }
-        section {
-            padding: 40px 20px;
-        }
-        nav {
-            margin-bottom: 20px;
-        }
-        nav a {
-            margin: 5px;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-        nav a:hover {
-            background-color: #0056b3;
-        }
-
-        /* Кнопка "Наверх" */
-        #scrollToTop {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 40px;
-            height: 40px;
-            border: none;
-            border-radius: 50%;
-            background-color: #333;
-            color: white;
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s;
-            z-index: 1000;
-        }
-
-        #scrollToTop.show {
-            opacity: 0.7;
-            visibility: visible;
-        }
-
-        #scrollToTop:hover {
-            opacity: 1;
-        }
-
-        /* Стили для кнопки "К поддержке" */
-        #scrollToSupport {
-            position: fixed;
-            /*bottom: 70px; /* Чуть выше кнопки "Наверх" */
-            right: 20px;
-            width: 40px;
-            height: 40px;
-            border: none;
-            border-radius: 50%;
-            background-color: #333;
-            color: white;
-            cursor: pointer;
-            opacity: 0.7;
-            transition: opacity 0.3s;
-            z-index: 1000;
-        }
-
-        #scrollToSupport.hide {
-            opacity: 0;
-            visibility: hidden;
-        }
-
-        #scrollToSupport:hover {
-            opacity: 1;
-        }
-
-        footer {
-            background: #222;
-            color: white;
-            padding: 10px;
-            margin-top: auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой Сайт-Визитка</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ponomar&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <button id="scrollToSupport" title="К поддержке">⇩</button>
-        <button id="scrollToTop" title="Наверх">⇧</button>
+  <!-- Навигация -->
+  <nav>
+    <div class="nav">
+      <div class="logo">
+        <div>Mantikorit</div>
+      </div>  
+      <button class="menu-toggle" aria-label="Открыть меню">
+      <!-- Три полоски для гамбургер-иконки -->
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+      <ul class="menu">
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#links">Соцсети</a></li>
+          <li><a href="#contact">Контакты</a></li>
+      </ul>
     </div>
-    <header>
-        <div id="phrase" class="phrase">Загрузка...</div>
-    </header>
+  </nav>
 
-    <div class="container">
-        <section>
-            <h2>Mantikorit</h2>
-            <p>Оформить в виде карточки</p>
-            <p>Фото + кто по жизни</p>
-            <p>Навыки, увлечения, опыт.</p>
-        </section>
+    <!-- Основной контент -->
+  <main>
+    <section id="about">
+      <h1>Обо мне</h1>
+      <p>Здесь будет текст о вас.</p>
+    </section>
+    <section>
+      <h1>дополнительная</h1>
 
-        <main>
-            <nav>
-                <a href="pages/links.html" class="nav-link">Ссылки</a>
-                <a href="pages/projects.html" class="nav-link">Проекты</a>
-                <a href="pages/group.html" class="nav-link">Коллективы</a>
-            </nav>
-            <div id="content">Загрузка...</div>
-        </main>
+    </section>
+    <section id="contact">
+      <h1>Контакты:</h1>
+      <a href="" target="_blank">- Создать ещё одну почту </a>
+      <p>- <a href="https://vk.com/im?sel=-199509950&entrypoint=community_page" target="_blank">Сообщение</a> в группе ВК</p>
+      <p>- <a href="https://t.me/MantQnA_bot" target="_blank">Телеграм бот</a> для связи</p>
+    </section>
+  </main>
+
+  <!-- Кнопка Наверх -->
+  <button id="toTopBtn" title="Наверх">↑</button>
+
+  <!-- Подвал -->
+  <footer>
+    <p class="non">Ку ку, лучше поддержите монетой!</p>
+    <p>&copy; <span id="year"></span> Создан для личных целей и залит на GitHub</p>
+    <p class="non">Что-то ещё хотели?</p>
+  </footer>
+
+  <script>
+    // Установка текущего года в подвале
+    document.getElementById('year').textContent = new Date().getFullYear();    
+  
+    
+    document.addEventListener('DOMContentLoaded', () => {
+    // Элементы управления меню
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    
+    // Обработчик клика по кнопке меню
+    menuToggle.addEventListener('click', () => {
+        // Переключаем класс active (открытие/закрытие меню)
+        nav.classList.toggle('active');
         
-        <section id="support">
-            <h1>Поддержать</h1>
-            <a href="https://www.donationalerts.com/r/mantikorit" target="_blank">Донейшен</a>
-            <a href="https://hipolink.net/mantikorit" target="_blank">Хиполинк</a>
-        </section>
-    </div>
+        // Обновляем атрибут доступности
+        const isExpanded = nav.classList.contains('active');
+        menuToggle.setAttribute('aria-expanded', isExpanded);
+    });
+    
+    // Функция плавного скролла
+    const smoothScroll = (targetId) => {
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            // Рассчитываем позицию с учетом фиксированной навигации
+            const offset = 90; // Отступ сверху (подстройте под вашу навигацию)
+            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+            
+            // Плавный скролл
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    };
 
-    <footer>
-        <p>© 2025 Создано автором и загружено на GitHub</p>
-    </footer>
-    <script src="scripts/pageLoader.js"></script>
-    <script src="scripts/phrase.js"></script>
-    <script src="scripts/scroll.js"></script>
-    <script src="scripts/scrollToTop.js"></script>
-    <script src="scripts/scrollToSupport.js"></script>
+    // Обработчик для всех ссылок навигации
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', (e) => {
+            // Проверяем, что это не пустая ссылка
+            const href = link.getAttribute('href');
+            if (href === '#' || href === '') return;
+            
+            // Отменяем стандартное поведение
+            e.preventDefault();
+            
+            // Получаем ID целевого элемента (убираем #)
+            const targetId = href.substring(1);
+            
+            // Всегда закрываем меню при клике на ссылку
+            nav.classList.remove('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            
+            // Плавный скролл к цели
+            smoothScroll(targetId);
+            
+            // Обновляем URL без перезагрузки страницы
+            history.pushState(null, null, href);
+        });
+    });
+});
+  </script>
+  <script src="scripts/toTopBtn.js"></script>
 </body>
 </html>
