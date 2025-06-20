@@ -1,124 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мой Сайт-Визитка</title>
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Ponomar&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приложение-окно</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <!-- Навигация -->
-  <nav>
-    <div class="nav">
-      <div class="logo">
-        <div>Mantikorit</div>
-      </div>  
-      <button class="menu-toggle" aria-label="Открыть меню">
-      <!-- Три полоски для гамбургер-иконки -->
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-      <ul class="menu">
-          <li><a href="#about">Обо мне</a></li>
-          <li><a href="#links">Соцсети</a></li>
-          <li><a href="#contact">Контакты</a></li>
-      </ul>
-    </div>
-  </nav>
+    <div class="header">Hh</div>
+    <main>
+        <div class="sections">l</div>
+    </main>
+    <footer>Kk</footer>
 
-    <!-- Основной контент -->
-  <main>
-    <section id="about">
-      <h1>Обо мне</h1>
-      <p>Здесь будет текст о вас.</p>
-    </section>
-    <section>
-      <h1>дополнительная</h1>
-
-    </section>
-    <section id="contact">
-      <h1>Контакты:</h1>
-      <a href="" target="_blank">- Создать ещё одну почту </a>
-      <p>- <a href="https://vk.com/im?sel=-199509950&entrypoint=community_page" target="_blank">Сообщение</a> в группе ВК</p>
-      <p>- <a href="https://t.me/MantQnA_bot" target="_blank">Телеграм бот</a> для связи</p>
-    </section>
-  </main>
-
-  <!-- Кнопка Наверх -->
-  <button id="toTopBtn" title="Наверх">↑</button>
-
-  <!-- Подвал -->
-  <footer>
-    <p class="non">Ку ку, лучше поддержите монетой!</p>
-    <p>&copy; <span id="year"></span> Создан для личных целей и залит на GitHub</p>
-    <p class="non">Что-то ещё хотели?</p>
-  </footer>
-
-  <script>
-    // Установка текущего года в подвале
-    document.getElementById('year').textContent = new Date().getFullYear();    
-  
-    
-    document.addEventListener('DOMContentLoaded', () => {
-    // Элементы управления меню
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.nav');
-    
-    // Обработчик клика по кнопке меню
-    menuToggle.addEventListener('click', () => {
-        // Переключаем класс active (открытие/закрытие меню)
-        nav.classList.toggle('active');
-        
-        // Обновляем атрибут доступности
-        const isExpanded = nav.classList.contains('active');
-        menuToggle.setAttribute('aria-expanded', isExpanded);
-    });
-    
-    // Функция плавного скролла
-    const smoothScroll = (targetId) => {
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            // Рассчитываем позицию с учетом фиксированной навигации
-            const offset = 90; // Отступ сверху (подстройте под вашу навигацию)
-            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
-            
-            // Плавный скролл
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
-        }
-    };
-
-    // Обработчик для всех ссылок навигации
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-        link.addEventListener('click', (e) => {
-            // Проверяем, что это не пустая ссылка
-            const href = link.getAttribute('href');
-            if (href === '#' || href === '') return;
-            
-            // Отменяем стандартное поведение
-            e.preventDefault();
-            
-            // Получаем ID целевого элемента (убираем #)
-            const targetId = href.substring(1);
-            
-            // Всегда закрываем меню при клике на ссылку
-            nav.classList.remove('active');
-            menuToggle.setAttribute('aria-expanded', 'false');
-            
-            // Плавный скролл к цели
-            smoothScroll(targetId);
-            
-            // Обновляем URL без перезагрузки страницы
-            history.pushState(null, null, href);
-        });
-    });
-});
-  </script>
-  <script src="scripts/toTopBtn.js"></script>
+    <script src="scripts/AutoHeight.js"></script>
 </body>
 </html>
