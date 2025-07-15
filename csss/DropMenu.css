@@ -1,0 +1,88 @@
+/* Базовые стили меню */
+        .dropdown-container {
+            position: relative;
+
+        }
+        
+        /*.dropdown-toggle {
+        .dropdown-toggle:hover { }*/
+        
+        .dropdown-menu {
+            
+            position: absolute;
+            top: 100%;
+            width: 500px;
+            background: rgba(0, 0, 0, 0.438);
+            border-radius: 10px;
+
+            z-index: 1000;
+            display: none;
+
+            margin-top: 10px;
+            backdrop-filter: blur(2px);
+        }
+        
+        .dropdown-menu.show {
+             transition: all 0.3s; 
+            display: block;
+        }
+        
+        .dropdown-header {
+            background: #00000071;
+            padding: 8px 16px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .dropdown-divider {
+            height: 1px;
+            background: #e9ecef;
+            margin: 8px 0;
+        }
+        
+.dropdown-item {
+  display: block;
+  font-size: 16px;
+  padding: 10px 30px;
+  color: #d1d1d1;
+  text-decoration: none;   /* Убираем подчёркивание */
+  transition: all 0.3s;    /* Плавные анимации */
+}
+
+/* Эффект при наведении */
+.dropdown-item:hover {
+  background: #0000008c;     /* Фон при наведении */
+  color: white;            /* Цвет текста */
+}
+
+/* Иконка при наведении (опционально) */
+.dropdown-item:hover::before {
+  content: "› ";
+  font-weight: bold;
+}
+
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        width: 500px;
+    }
+    
+    .dropdown-item {
+        padding: 10px 15px; /* Меньшие отступы на мобильных */
+        font-size: 15px;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 400px) {
+    .dropdown-menu {
+        width: 220px;
+    }
+    
+    .dropdown-item {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}

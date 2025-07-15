@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantikorit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <style>
+        @import 'csss/DropMenu.css';
+        @import 'csss/style.css';       
+    </style>
+</head>
+
+<body>
+    <!-- Кнопка "Наверх" -->
+    <button id="backToTop" title="Вернуться наверх">
+        <div class="arrow-up"></div>
+    </button>
+    <header>
+        <a href="https://www.youtube.com/watch?v=p2Kn_Il-jzQ">Mantikorit</a>
+        <!-- Контейнер меню -->
+        <nav class="headernav">
+            <nav class="dropdown-container">
+                <!-- Кнопка открытия меню -->
+                <button class="dropdown-toggle" id="dropdownBtn" aria-expanded="false">
+                    <span>Навигация</span>
+                </button>
+                
+                <!-- Выпадающее содержимое -->
+                
+                <nav class="dropdown-menu" id="dropdownMenu"> 
+                    <a href="#home" class="dropdown-item">Начало</a>
+                    <a href="#links" class="dropdown-item">Ссылки</a>
+                    <a href="#Project" class="dropdown-item">Проекты</a>
+                    <a href="#u" class="dropdown-item">Услуги</a>     
+                    <a href="#site" class="dropdown-item">О сайте</a>
+                    </div>
+                </nav>
+            </nav>
+        </nav>
+    </header>
+    <!-- Внутри тега body, перед main -->
+    <main>
+        <div class="slide">
+            <div class="content"> 
+                <section id="home">
+                    <h1>Здрасть, я Mantikorit</h1>
+                    <p>Художник, программист, стример и ещё кто-то везде по чучуть.</p>
+                </section>
+                <div class='divider'></div>
+                <section id="links">
+                    <h2>Ссылки</h2>
+                        <h3>Соцсети</h3>
+                        <div case-links>
+                            <a href="https://vk.com/mantikorit" data-type="vk">VK</a>
+                            <a href="https://t.me/Mantikorit" data-type="tg">Telegram</a>
+                            <a href="https://www.twitch.tv/mantikorit" data-type="twitch">Twitch</a>
+                            <a href="https://x.com/Mantikorit" data-type="twitter">X/Twitter</a>
+                            <a href="https://bsky.app/profile/mantikorit.bsky.social" data-type="bsky">Bsky</a>
+                            <a href="https://www.deviantart.com/mantikorit" data-type="deviant">DeviantArt</a>
+                            <a href="https://discord.gg/invite/ge9ykD7E5t" data-type="discord">Discord</a>
+                            <a href="www.youtube.com/@mantikorit" data-type="tumblr">Tumblr</a>
+                            <a href="https://www.tumblr.com/mantikorit" data-type="youtube">YouTube</a>
+                            <a href="https://www.tiktok.com/@mantikorit" data-type="tiktok">TikTok</a>
+                        </div>
+                        <h3>Поддержать</h3>
+                        <div case-links>
+                            <a href="https://www.donationalerts.com/r/mantikorit" data-type="da">DonationAlerts</a>
+                            <a href="https://hipolink.net/mantikorit" data-type="hope">HipoLink</a>
+                        </div>
+                        <h3>Контакты</h3>
+                        <div case-links>
+                            <a href="https://t.me/MantQnA_bot" data-type="tg">Анонимка тг бот</a>
+                            <a href="https://t.me/Mantikorit" data-type="tg">Сообщения в тг (слева от on/off звука)</a>
+                            <a href="https://vk.com/im/convo/-199509950?entrypoint=profile_page" data-type="vk">Сообщения в вк</a>
+                        </div>
+                </section>
+                <div class='divider'></div>
+                <section id="Project">
+                    <h2>Проекты</h2>
+                    <p>На данный момент +- из реализованного только это...</p>
+                    <br>
+                    <div class="case">
+                        <div class="game_thumb">
+                            <a href="https://mantikorit.itch.io/chertaloop-demoversion" tabindex="-1" data-label="game:2268944:thumb" data-action="game_grid" class="link_game">
+                            <img data-lazy_src="https://img.itch.zone/aW1nLzEzNDQ2MjEzLnBuZw==/315x250%23c/ZUn5Jr.png" height="250" class="lazy_loaded" width="315" src="https://img.itch.zone/aW1nLzEzNDQ2MjEzLnBuZw==/315x250%23c/ZUn5Jr.png"></a>
+                            <a href="https://mantikorit.itch.io/chertaloop-demoversion" data-label="game:2268944:title" data-action="game_grid" class="title game_link">Chertaloop "DemoVersion"</a>
+                            <p>Моя первая новелла на первом "локальном" ГеймДжеме в формате демки.</p>
+                        </div>
+                        <div class="game_thumb">
+                            <a href="https://boar-herdsman.itch.io/dtts" tabindex="-1" data-label="game:2923403:thumb" data-action="game_grid" class="link_game">
+                            <img data-lazy_src="https://img.itch.zone/aW1nLzE4MTcyNDE1LnBuZw==/315x250%23c/DE%2FsbX.png" height="250" class="lazy_loaded" width="315" src="https://img.itch.zone/aW1nLzE4MTcyNDE1LnBuZw==/315x250%23c/DE%2FsbX.png"></a>
+                            <a href="https://boar-herdsman.itch.io/dtts" data-label="game:2923403:title" data-action="game_grid" class="title game_link">DON'T TALK TO STRANGERS</a>
+                            <p>Новелла знакомой, в которой выступаю разработчиком.</p>
+                            <a href="https://t.me/dtts_vn" class="prok">ТГ ПРОЕКТА</a>
+                        </div>
+                    </div>
+                </section>
+                <div class='divider'></div>
+                <section id="u">
+                    <h2>Услугии</h2>
+                    <p>Потом появится...</p>
+                </section>
+                <div class='divider'></div>
+                <section id="site">
+                    <h2>Про сайт</h2>
+                    <p>Сайт является личной "визит карточкой" и личным проектом</p>
+                    <h3>Версия сайта v0.0 (одностраничный)</h3>
+                    <p>Сайт делался долго из-за долгих раздумий по содержанию и стилизации, было несколько тестовых выриантов до этого (Среди которых под эстетику xp, компьютерного приложения, старая вики и тп) и было не до этого из-за финала учёбы в университете. Решила сейчас поделиться как есть основой и хоть чем-то.</p>
+                    <p>Если будут проблеммы, пишите в контакты: Что? Где? Через что?</p>   
+                    <h3>Планы на будущее</h3>
+                        <ul class="space-list">
+                            <li>Уход из условной альфы (v0.0 -> v1.0)</li>
+                            <li>Подправит "схемы информации" (где-что)</li>
+                            <li>Разделение сайта на страницы</li>
+                            <li>Изменения в оформлении</li>
+                            <li>Добавление доп информации</li>
+                            <li>Ответы на частые вопросы</li>
+                        </ul>
+                </section>
+            </div>
+        </div>
+
+    </div>
+    </main>
+
+    <!-- Добавить перед закрывающим тегом body -->
+    
+    <footer>
+        <div>Сделано Mantikorit для личных целей @2025</div>
+    </footer>
+
+    <script src="scripts/scrollbar.js"></script>
+    <script src="scripts/paddingMain.js"></script>
+    <script src="scripts/DropMenu.js"></script>
+    <script src="scripts/cosmosBG.js" data-config="assets/jsons/space-config.json"></script>
+    <script src="scripts/backtoBTN.js"></script>
+</body>
+</html>
