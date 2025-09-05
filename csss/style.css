@@ -580,7 +580,7 @@ a[data-btn-type="itch"]:hover {
         
 .app-logo{
   object-fit: contain;
-  width: 100%;
+  width: 80%;
   align-self: center;
   
   filter: drop-shadow(0 0 20px #000000);
@@ -1274,3 +1274,4 @@ a[data-btn-type="itch"]:hover {
 .vactual-ver {
   gap: 12px;
 }
+
