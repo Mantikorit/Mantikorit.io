@@ -859,7 +859,7 @@ a[data-btn-type="itch"]:hover {
 .carousel-btn button {
   padding: 12px 12px;
   font-size: 18px;
-  margin: 0 10px;
+  margin: 0;
   cursor: pointer;
   background: #ffffffbe;
   color: #000;
