@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mantikorit | Home</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../assets/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <header class="content" style="z-index: 2;">
+
+        <nav>     
+            <a href="index.html" class="neural-network" data-text="Mantikorit">Mantikorit</a>
+
+            <input type="checkbox" id="menu-checkbox">
+
+            <ul class="menu">
+                <li><button class="menu-close-btn" onclick="document.getElementById('menu-checkbox').checked = false;">
+                    Close
+                </button></li>
+                
+                <div class="menu-poloska"></div> 
+                
+                <li><p class="act">> &nbsp;&nbsp; Home</p></li>
+                <li><a href="links.html">Links</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="osite.html">About Site</a></li>
+
+                <div class="menu-poloska"></div> 
+
+                <li><a href="../ru/index.html">RU</a></li>
+                <li><p class="act">> &nbsp;&nbsp; EN</p></li>    
+
+                <div class="menu-poloska"></div> 
+
+                <div class="menu-text">
+                    <p>> by Mantiorit</p>
+                    <p>> v2.1</p>
+                </div>
+            </ul>
+
+            <button class="menu-toggle" onclick="document.getElementById('menu-checkbox').checked = true;">
+                <span class="menu-text">Menu</span>
+                <span class="menu-icon">☰</span>
+            </button>
+            
+            <label for="menu-checkbox" class="overlay"></label>
+    
+        </nav>
+
+    </header>
+
+    <div class="page" style="z-index: 1;">
+        <main class="content">
+            <section id="me" class="me">
+                <a href="links.html">
+                    <h1>Hey, I'm Mantikorit</h1>
+                    <p>Artist, coder, streamer, and a little bit of everything in between.</p>
+                </a>
+            </section>
+
+            <div class="divider-line"></div>
+           
+           <section id="wall" class="wall">
+                <article class="app" id="id">
+                    <div class="app-header">
+                    
+                        <p>■</p>
+                        <h2>ArtFight</h2>    
+
+                    </div>
+                    <div class="app-content">
+
+                        <h3># SOON</h3>
+                    </div>
+                </article>
+
+                <article class="app" id="activ-project">
+                    <div class="app-header">
+                    
+                        <p>■</p>
+                        <h2>Active Project</h2>     
+
+                    </div>
+                    <div class="app-content">
+        
+                        <img src="../assets/wall/XUzkn0.png" alt="Превью DTtS">
+                        
+                        <div class="menu-poloska"></div> 
+
+                        <h3># Visual Novel "DON`T TALK TO STRANGERS"</h3>
+                        <p>> A visual novel by a friend of mine — I'm the developer on the team.</p>
+                        <p>> Actively working on the v1.2 update.</p>
+
+                        <div class="menu-poloska"></div>
+                        
+                        <div class="app-link">
+                            <a target="_blank" data-btn-type="itch" href="https://boar-herdsman.itch.io/dtts" target="_blank">itch.io</a>
+                            <a target="_blank" data-btn-type="tg" href="https://t.me/dtts_vn" target="_blank">tg project</a>
+                            <a target="_blank" data-btn-type="tg" href="https://t.me/boar_pasture" target="_blank">author's tg</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="app" id="commisions">
+                    <div class="app-header">
+                    
+                        <p>■</p>
+                        <h2>Комишки</h2>  
+
+                    </div>
+                    <div class="app-content">                      
+                        <p>> You can commission an artwork from me...</p>
+                        <div class="menu-poloska"></div>
+
+                        <div class="app-link">
+                            <a href="services.html">More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="app" id="latest-video">
+                    <div class="app-header">
+                    
+                        <p>■</p>
+                        <h2>Video?</h2>   
+
+                    </div>
+                    <div class="app-content">
+        
+                        <p>> Someday I'm going to actually release something.</p>
+                        <p>> For now, just speedpaints....</p>
+                        <p>> Yeah...</p>
+
+                        <div class="menu-poloska"></div>
+                            
+                        <div class="app-link">
+                            <a href="https://www.youtube.com/watch?v=p2Kn_Il-jzQ">More</a>
+
+                        </div>
+                    </div>
+                </article>
+
+                <article class="app" id="site-plan">
+                    <div class="app-header">
+                    
+                        <p>■</p>
+                        <h2>Планы по сайту</h2>      
+
+                    </div>
+                    <div class="app-content">
+
+                        <p>> The site will be updated further, so there are plans for the future.</p>
+
+                        <div class="menu-poloska"></div> 
+
+                        <ul><p>From the "wishlist" :</p>
+                            <li>Adding / filling in info as needed</li>
+                            <li>Adding more sections as needed</li>
+                            <li>Maybe adding my own "icons"?</li>
+                            <li>Dropping in some images here and there</li>
+                            <li>Something micro-random</li>
+                            <li>A page for videos</li>
+                        </ul>
+
+                        <div class="menu-poloska"></div>
+                        
+                        <div class="app-link">
+                            <a href="osite.html">More</a>
+                        </div>
+                    </div>
+                </article>
+
+                
+
+                <!--  == Шаблон артикулов == 
+                
+                <article class="app" id="id">
+                    <div class="app-header">
+                    
+                        <p>■</p>
+                        <h2>Title</h2>    
+
+                    </div>
+                    <div class="app-content">
+        
+                        <img src="../assets/banners/XUzkn0.png" alt="Превью DTtS">
+                        
+                        <div class="menu-poloska"></div> 
+
+                        <h3># Title Text</h3>
+                        <p>> text</p>
+
+                        <div class="menu-poloska"></div> 
+
+                        <ul><p>Tit :</p>
+                            <li>point</li>
+                        </ul>
+
+                        <div class="menu-poloska"></div>
+                        
+                        <div class="app-link">
+                            <a target="_blank" data-btn-type="tg" target="_blank" href="">Link</a>
+                            <a target="_blank" href="">Link</a>
+                            <a target="_blank" href="">Link</a>
+                        </div>
+                    </div>
+                </article>
+                
+                -->
+
+            </section>
+        </main> 
+    </div>
+
+    <footer>
+        <!--<div>Сделано @Mantikorit для личных целей / 2025</div>-->
+    </footer>
+    
+    
+    <script src="../scripts/bg_space.js" data-config="../jsons/bg_defolt.json"></script>
+</body>
+</html>
