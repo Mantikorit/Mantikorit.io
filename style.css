@@ -782,6 +782,11 @@ a[data-btn-type="itch"]:hover {
   background: #ce4d4d; 
 }
 
+/**/
+a[data-btn-type="artfight_mystery"]:hover{
+  background: #630017;
+}
+
 /* ===== Галерея / карусель ===== */
 .gallery-container {           
   margin-bottom: 25px;
