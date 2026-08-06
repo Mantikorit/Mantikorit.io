@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mantikorit | site</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../assets/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header class="content" style="z-index: 2;">
+
+        <nav>     
+            <a href="index.html" class="neural-network" data-text="Mantikorit">Mantikorit</a>
+
+            <input type="checkbox" id="menu-checkbox">
+
+            <ul class="menu">
+                <li><button class="close-btn" onclick="document.getElementById('menu-checkbox').checked = false;">
+                    Close
+                </button></li>
+                
+                <div class="menu-poloska"></div> 
+                
+                <li><a href="index.html ">Home</a></li>
+                <li><a href="links.html ">Links</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="osite.html">About the site</a></li>
+
+                <div class="menu-poloska"></div> 
+
+                <li><a href="../ru/osite.html">RU</a></li>
+                <li><p class="act">> &nbsp;&nbsp; EN</p></li>    
+
+                <div class="menu-poloska"></div> 
+
+                <div class="menu-text">
+                    <p>> by Mantiorit</p>
+                    <p>> v2.0</p>
+                </div>
+            </ul>
+
+            <button class="menu-toggle" onclick="document.getElementById('menu-checkbox').checked = true;">
+                <span class="menu-text">Menu</span>
+                <span class="menu-icon">☰</span>
+            </button>
+            
+            <label for="menu-checkbox" class="overlay"></label>
+    
+        </nav>
+
+    </header>
+
+    <div class="page" style="z-index: 1;">
+<main class="content">
+<section id="site" class="">
+<h1>About the site</h1>
+<p>This site is a personal "business card" and personal a self-written project/wishlist.</p>
+            </section>
+            
+            <section id="versions" class="ver-site">
+
+                <h2>> The current version of the website is V2.0 "Translation"</h2>
+               
+                <ul> <h3>Changes:</h3>
+                    <li>Creating a translation</li>
+                    <li>Changing the menu</li>
+                    <li>Changes in the design</li>
+                </ul>
+                <!--<p>2025-02-**</p>-->
+   
+                <ul> <h3>Future plans:</h3>
+                    <li>Adding/adding information as needed</li>
+                    <li>Adding sections as needed</li>
+                    <li>Possible addition of your own "icons"?</li>
+                    <li>Add pictures/images</li>
+                    <li>Filling in "services.html "</li>
+                    <li>Something micro random</li>
+                </ul>
+
+            </section>
+
+            <div class="plosk"></div>
+
+            <section id="history-vers" class="ver-site">
+                <h2>> Version history</h2>
+<h3>Here is a list of all versions and changes:</h3>
+                
+                <!--v1-->
+                <details>
+                    <summary>Site version v1.0 "Multipage"</summary>
+                    <div class="sum-detal">
+                        <p>
+                           The desire for systematization and division into sections for convenience to get rid of the "small pile"
+                        </p>
+                        <div class="menu-poloska"></div> 
+                        <ul>
+                            <p>Changes :</p>
+                            <li>Switching to a multi-page version</li>
+                            <li>Splitting information into pages and changing information</li>
+                            <li>Changes in the design</li>
+                        </ul>
+                        <p class="sum-time">-- 2025-09-03</p>
+                    </div>
+                </details> 
+
+                <!--V0-->
+                <details>
+                    <summary>Website version v0.0 "beta"/"one-page"</summary>
+                    <div class="sum-detal">
+
+                        <p>
+                            The site took a long time to create due to long thoughts on content and styling,
+                            there were several test versions before that (Among them for the aesthetics of xp,
+                            a computer application, an old wiki, etc.) and it was not up to that because of the end of my studies at the university.
+                            The "stuffing" for shared access was done abruptly as it is, with a basis and at least with something.
+                        </p>
+                        <p class="sum-time">-- 2025-07-15</p>
+                    </div>
+                </details>  
+                
+            </section>
+
+        </main> 
+    </div>
+
+    <footer class="content">
+        <!--<div>Made by @Mantikorit for personal purposes / 2025</div>-->
+    </footer>
+    
+    <script src="../scripts/bg_space.js" data-config="../jsons/bg_defolt.json"></script>
+
+</body>
+</html>
+
+
+<!-- Template
+<details>
+    <summary>The name"</summary>
+        <p>Text</p>
+        <ul>
+            <li></li>
+        </ul>    
+        <p class="sum-time">--yyyy-mm-dd</p>
+    </details>  
+-->
